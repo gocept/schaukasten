@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title> Schaukasten </title>
+    <meta name="description" content="Upload, review and present arbitrary files via web interface." />
+    <meta name="author" content="gocept gmbh &amp; co. kg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+    <!-- build:css optimized.min.css -->
+    <link rel="stylesheet" type="text/css" media="screen" href="/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="/css/font-awesome.min.css" />
+    <link rel="stylesheet" type="text/css" media="screen"  href="/css/app.css" />
+    <!-- endbuild -->
+
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+
+    <script type="text/javascript">
+        window.application_url = window.location.protocol + '//' + window.location.host + '/api';
+    </script>
+  </head>
+  <body>
+    <div class="content">Content goes here.</div>
+
+    <!-- build:js optimized.js -->
+    <!-- bower:js -->
+    <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="bower_components/dropzone/dist/min/dropzone.min.js"></script>
+    <script src="bower_components/handlebars/handlebars.js"></script>
+    <!-- endbower -->
+    <script type="text/javascript" src="/js/app.base.js"></script>
+    <!-- endbuild -->
+  </body>
+</html>

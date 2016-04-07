@@ -1,0 +1,23 @@
+{
+    "name": "schaukasten.frontend",
+    "version": "1.0.0-dev.0",
+    "authors": [
+        "gocept gmbh & co. kg <mail@gocept.com>"
+    ],
+    "description": "Upload, review and present arbitrary files via web interface.",
+    "private": true,
+    "dependencies": {
+        "bootstrap": "3.3.5",
+        "jquery": "2.1.3",
+        "dropzone": "4.0.1",
+        "jasmine-jquery": "^2.1.1",
+        "handlebars": "4.0.5"
+    },
+    "ignore": [
+      "**/.*",
+      "backend",
+      "bin",
+      "node_modules",
+      "frontend/bower_components"
+    ]
+}
