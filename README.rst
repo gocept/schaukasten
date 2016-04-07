@@ -1,4 +1,7 @@
-# schaukasten
+===========
+Schaukasten
+===========
+
 Upload, review and present arbitrary files via web interface.
 
 .. image:: https://circleci.com/gh/gocept/schaukasten.svg?style=shield
