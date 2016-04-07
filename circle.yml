@@ -1,9 +1,11 @@
 dependencies:
   override:
+    - ./start_pyramid.sh
     - npm install
     - npm install -g codecov
     - grunt
 test:
   override:
+    - py.test
     - grunt phantomjs
     - codecov
