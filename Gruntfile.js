@@ -39,6 +39,10 @@ module.exports = function (grunt) {
                 src: './frontend/favicon.ico',
                 dest: 'frontend/dist/favicon.ico',
             },
+            index: {
+                src: './frontend/index.html',
+                dest: 'frontend/dist/index.html',
+            },
         },
         filerev: {
             options: {
@@ -184,6 +188,5 @@ module.exports = function (grunt) {
         'cssmin:generated',
         'filerev',
         'usemin',
-        'manifest',
     ]);
 };

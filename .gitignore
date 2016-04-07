@@ -4,3 +4,4 @@ frontend/bower_components
 _SpecRunner.html
 coverage.json
 report/
+.tmp/
