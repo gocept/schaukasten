@@ -3,7 +3,7 @@ machine:
     version: 3.5.0
 dependencies:
   override:
-    - ./start_pyramid.sh
+    - pip install -r test-requirements.txt
     - npm install
     - npm install -g codecov
     - grunt
