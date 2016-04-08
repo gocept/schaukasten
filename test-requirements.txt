@@ -1,3 +1,4 @@
+codecov
 pytest
 pytest-sugar
 pytest-flake8
