@@ -1,8 +1,7 @@
-from pyramid.response import Response
-
-import json
+import pyramid.view
 
 
+@pyramid.view.view_defaults(renderer='json')
 class HomeView(object):
     """Initial view for homepage."""
 
@@ -15,4 +14,4 @@ class HomeView(object):
         server_port = environ.get('SERVER_PORT', 'no_port')
         response = ('You have asked {}:{} and got the answer '
                     '84/2.'.format(server_name, server_port))
-        return Response(json.dumps(dict(success=response)))
+        return dict(success=response)
