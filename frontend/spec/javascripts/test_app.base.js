@@ -1,12 +1,11 @@
-/*global describe, schaukasten, $, beforeEach, afterEach, it, expect */
-/*jslint nomen: true, unparam: true, bitwise: true*/
+/*global describe, Schaukasten, $, beforeEach, afterEach, it, expect */
 
 describe("Schaukasten", function () {
     "use strict";
 
     beforeEach(function () {
         $('body').append($('<div class="content"></div>'));
-        schaukasten.initialize();
+        new Schaukasten('.content');
     });
 
     afterEach(function () {

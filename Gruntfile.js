@@ -10,6 +10,16 @@ module.exports = function (grunt) {
                 'frontend/dist',
             ]
         },
+        babel: {
+            options: {
+                sourceMap: true
+            },
+            dist: {
+                files: {
+                    'frontend/js/app.base.js': 'frontend/src/app.base.js'
+                }
+            }
+        },
         useminPrepare: {
             html: 'frontend/index.html',
             options: {
@@ -72,8 +82,8 @@ module.exports = function (grunt) {
                 }
             }
         },
-        jshint: {
-            all: ['Gruntfile.js', 'frontend/js/app.*.js', 'frontend/spec/javascripts/*.js']
+        eslint: {
+            target: ['frontend/src/app.base.js']
         },
         bower: {
             install: {
@@ -131,14 +141,7 @@ module.exports = function (grunt) {
                     template: require('grunt-template-jasmine-istanbul'),
                     templateOptions: {
                         coverage: 'coverage.json',
-                        report: 'report',
-                        thresholds: {
-                            lines: 90,
-                            statements: 90,
-                            branches: 90,
-                            functions: 90
-                        }
-                    }
+                        report: 'report'                    }
                 },
             }
         },
@@ -159,25 +162,29 @@ module.exports = function (grunt) {
         }
     });
     grunt.registerTask('default', [
+        'eslint',
+        'babel',
         'handlebars:compile',
-        'jshint:all',
         'bower:install',
         'bower_concat:all',
         'wiredep:task'
     ]);
     grunt.registerTask('test', [
-        'jshint:all',
+        'eslint',
+        'babel',
         'jasmine:schaukasten:build',
         'connect',
     ]);
     grunt.registerTask('phantomjs', [
-        'jshint:all',
+        'eslint',
+        'babel',
         'jasmine:schaukasten'
     ]);
     grunt.registerTask('all', [
+        'eslint',
         'clean',
+        'babel',
         'handlebars:compile',
-        'jshint:all',
         'bower:install',
         'bower_concat:all',
         'copy',
