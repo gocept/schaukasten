@@ -1,18 +1,15 @@
-Backend
+=======
+HACKING
 =======
 
-Install postgres if needed and a new database:
+:Author:
+    `gocept <http://gocept.com/>`_ <mail@gocept.com>
 
-$ createdb schaukasten
+:Issues:
+    https://github.com/gocept/schaukasten/issues
 
-$ virtualenv3.5 .
-$ source bin/activate
-$ pip install -r requirements.txt
-$ pserve development.ini
+:Source code:
+    https://github.com/gocept/schaukasten
 
-Frontend
-========
-
-$ npm install
-$ grunt
-$ grunt phantomjs
+:Current change log:
+    https://raw.githubusercontent.com/gocept/schaukasten/master/CHANGES.rst

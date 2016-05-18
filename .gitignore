@@ -9,8 +9,10 @@ __pycache__/
 _SpecRunner.html
 coverage.json
 coverage.xml
+doc/build
 frontend/bower_components
 htmlcov/
 node_modules
 report/
 testreport.xml
+undefined
