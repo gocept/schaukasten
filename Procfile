@@ -1,1 +1,1 @@
-web: bin/start-nginx heroku_start backend/heroku.ini
+web: bin/start-nginx heroku_start
