@@ -12,3 +12,8 @@ test:
     - py.test
     - grunt phantomjs
     - codecov
+deployment:
+  production:
+    branch: master 
+    heroku:
+      appname: schaukasten-app
