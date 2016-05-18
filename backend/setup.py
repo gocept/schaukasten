@@ -9,14 +9,13 @@ requires = [
     'transaction',
     'zope.sqlalchemy',
     'waitress',
-    'pytest',
-    'pytest-sugar',
-    'pytest-flake8',
-    'pytest-cov',
 ]
 
 test_requires = [
     'pytest',
+    'pytest-flake8',
+    'pytest-sugar',
+    'pytest-cov',
 ]
 
 setup(
