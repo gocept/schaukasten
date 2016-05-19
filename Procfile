@@ -1,1 +1,1 @@
-web: sh heroku_start
+web: bin/start_nginx sh heroku_start
