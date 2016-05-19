@@ -1,4 +1,3 @@
 #!/bin/sh
-pserve backend/heroku.ini
-sleep 2
-touch /tmp/app-initialized
+set -e
+python runapp.py
