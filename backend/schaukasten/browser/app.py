@@ -49,10 +49,10 @@ class Schaukasten(object):
 
     def add_routes(self):
         config = self.config
-        config.add_route('home', '/')
+        config.add_route('api', '/api/')
 
     def add_views(self):
         config = self.config
-        config.add_view(HomeView, route_name='home')
+        config.add_view(HomeView, route_name='api')
 
 factory = Schaukasten()
