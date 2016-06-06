@@ -1,9 +1,13 @@
 -e backend
 alembic
+gocept.cache
+gocept.testdb
+passlib
+psycopg2
 pyramid
 pyramid_tm
 sqlalchemy
 risclog.sqlalchemy
 transaction
-zope.sqlalchemy
 waitress
+zope.sqlalchemy
