@@ -18,9 +18,9 @@ class HomeView(BaseView):
     """Announce the api version at root path."""
 
     def __call__(self):
-        response = ('You are using the schaukasten api '
-                    'version {}.'.format(API_VERSION))
-        return dict(success=response, version=API_VERSION)
+        message = ('You are using the schaukasten api '
+                   'version {}.'.format(API_VERSION))
+        return dict(status='success', msg=message, version=API_VERSION)
 
 
 class UploadView(BaseView):

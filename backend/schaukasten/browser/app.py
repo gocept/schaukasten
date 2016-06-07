@@ -54,7 +54,7 @@ class Schaukasten(object):
 
     def add_views(self):
         config = self.config
-        config.add_view(HomeView, route_name='api')
+        config.add_view(HomeView, route_name='api', request_method='GET')
         config.add_view(
             UploadView,
             route_name='files',

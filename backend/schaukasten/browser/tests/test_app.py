@@ -5,7 +5,8 @@ import schaukasten.file
 def test_app__Schaukasten__api__1(browser):
     """It returns the current api version."""
     res = browser.get('/api/')
-    assert {'success': 'You are using the schaukasten api version 0.1.',
+    assert {'msg': 'You are using the schaukasten api version 0.1.',
+            'status': 'success',
             'version': 0.1} == res.json
 
 
