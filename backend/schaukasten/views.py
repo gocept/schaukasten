@@ -1,17 +1,17 @@
 import pyramid.view
 
 
+API_VERSION = 0.1
+
+
 @pyramid.view.view_defaults(renderer='json')
 class HomeView(object):
-    """Initial view for homepage."""
+    """Announce the api version at root path."""
 
     def __init__(self, request):
         self.request = request
 
     def __call__(self):
-        environ = self.request.environ
-        server_name = environ.get('SERVER_NAME', 'no_server')
-        server_port = environ.get('SERVER_PORT', 'no_port')
-        response = ('You have asked {}:{} and got the answer '
-                    '84/2.'.format(server_name, server_port))
-        return dict(success=response)
+        response = ('You are using the schaukasten api '
+                    'version {}.'.format(API_VERSION))
+        return dict(success=response, version=API_VERSION)
