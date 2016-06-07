@@ -2,6 +2,7 @@ from schaukasten.db import Object, GUID
 from sqlalchemy import Column, Integer, String, LargeBinary, ForeignKey
 from sqlalchemy.orm import relationship, backref
 import hashlib
+import mimetypes
 import uuid
 
 
@@ -17,6 +18,7 @@ class File(Object):
 
     def __init__(self, **kw):
         self.id = uuid.uuid4()
+        self.mimetype = mimetypes.guess_type(kw['filename'])
         super().__init__(**kw)
 
 
