@@ -6,6 +6,7 @@ Contents:
     :maxdepth: 1
 
     install
+    api
     hacking
     changes
 

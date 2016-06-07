@@ -1,1 +1,2 @@
 gocept.package[doc]
+sphinxcontrib-httpdomain
