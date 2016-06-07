@@ -37,7 +37,7 @@ Documentation
 To build the documentation install the doc dependencies in your virtualenv and build it::
 
     $ pip install -r doc-requirements.txt
-    $ sphinx-build -b html doc build/doc
+    $ sphinx-build -b html doc/source doc/build
 
 Running Tests
 =============
